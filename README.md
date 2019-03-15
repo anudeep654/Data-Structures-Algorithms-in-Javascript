@@ -10,9 +10,15 @@ Steps to be followed before solving a problem:(Colt Steele)
 5)how should we label the important pieces of data?<br />
 
 taken from randerson112358: 
+
+
 ![alt text](https://cdn-images-1.medium.com/max/1600/1*iEbD3x2S5KOiEI6ZOltp9w.png "taken from randerson112358")
 
 
+taken from randerson112358: 
+![alt text][logo]
+
+[logo]: https://cdn-images-1.medium.com/max/1600/1*iEbD3x2S5KOiEI6ZOltp9w.png "Logo Title Text 2"
 
 #### Patterns for solving problems in javascript
 
