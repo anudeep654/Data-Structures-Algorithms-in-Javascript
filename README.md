@@ -9,3 +9,16 @@ Steps to be followed before solving a problem:(Colt Steele)
 4)do I have enough information to solve the problem?<br />
 5)how should we label the important pieces of data?<br />
 
+
+
+#### Patterns for solving problems in javascript
+
+1)Frequency Pattern
+2)Multiple Pointer Pattern
+3)Sliding window pattern
+4)Divide & Conquer pattern
+
+###### Frequency Pattern
+
+
+
