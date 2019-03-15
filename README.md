@@ -18,7 +18,7 @@ Steps to be followed before solving a problem:(Colt Steele)
 3)Sliding window pattern <br />
 4)Divide & Conquer pattern <br />
 
-###### Frequency Pattern
+##### Frequency Pattern
 
 
 
