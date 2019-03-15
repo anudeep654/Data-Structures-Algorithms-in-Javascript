@@ -1,7 +1,6 @@
-# Data-Structures-Algorithms-in-Javascript
+# Data-Structures-Algorithms-in-Javascript(Colt Steele)
 
-
-Steps to be followed before solving a problem:(Colt Steele)
+Steps to be followed before solving a problem:
 
 1)Restate the problem in your own words. <br />
 2)what are the inputs to the problem? Like : integer,float,what about string for large numbers. <br />
@@ -9,8 +8,7 @@ Steps to be followed before solving a problem:(Colt Steele)
 4)do I have enough information to solve the problem?<br />
 5)how should we label the important pieces of data?<br />
 
-taken from randerson112358: 
-
+taken from randerson112358:
 
 ![alt text](https://cdn-images-1.medium.com/max/1600/1*iEbD3x2S5KOiEI6ZOltp9w.png "taken from randerson112358")
 
@@ -26,8 +24,6 @@ O(n): Going and asking each student individually is O(N).
 
 O(log n): Now I divide the class into two groups, then ask: “Is it on the left side, or the right side of the classroom?” Then I take that group and divide it into two and ask again, and so on. Repeat the process till you are left with one student who has your pen. This is what you mean by O(log n).
 
-
-
 I might need to do the O(n2) search if only one student knows on which student the pen is hidden. I’d use the O(n) if one student had the pen and only they knew it. I’d use the O(log n) search if all the students knew, but would only tell me if I guessed the right side.
 
 #### Patterns for solving problems in javascript
@@ -36,5 +32,3 @@ I might need to do the O(n2) search if only one student knows on which student t
 2)Multiple Pointer Pattern <br />
 3)Sliding window pattern <br />
 4)Divide & Conquer pattern <br />
-
-
