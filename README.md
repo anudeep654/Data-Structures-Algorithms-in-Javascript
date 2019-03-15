@@ -9,6 +9,9 @@ Steps to be followed before solving a problem:(Colt Steele)
 4)do I have enough information to solve the problem?<br />
 5)how should we label the important pieces of data?<br />
 
+taken from randerson112358: 
+![alt text](https://cdn-images-1.medium.com/max/1600/1*iEbD3x2S5KOiEI6ZOltp9w.png "taken from randerson112358")
+
 
 
 #### Patterns for solving problems in javascript
