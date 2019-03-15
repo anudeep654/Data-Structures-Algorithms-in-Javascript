@@ -13,10 +13,10 @@ Steps to be followed before solving a problem:(Colt Steele)
 
 #### Patterns for solving problems in javascript
 
-1)Frequency Pattern
-2)Multiple Pointer Pattern
-3)Sliding window pattern
-4)Divide & Conquer pattern
+1)Frequency Pattern <br />
+2)Multiple Pointer Pattern <br />
+3)Sliding window pattern <br />
+4)Divide & Conquer pattern <br />
 
 ###### Frequency Pattern
 
