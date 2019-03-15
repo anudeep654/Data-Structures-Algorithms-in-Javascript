@@ -1,3 +1,5 @@
+Question : given an array as input,find the first pair that sums to Zero. 
+
 function sumZero(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
@@ -8,9 +10,9 @@ function sumZero(arr) {
   }
 }
 
-sumZero([-3, -2, -1, 0, 1, 2, 3]); //Multiple pointers with Time complexity of o(n^2) with sum zero function
+sumZero([-3, -2, -1, 0, 1, 2, 3]); // Time complexity of o(n^2) with sum zero function
 
-//using pointers to map the sum zero function with time complexity of O(n)
+//using Multiple pointers with to map the sum zero function with time complexity of O(n)
 
 //as we know this is a sorted way we can easily use multiple pointers pattern.
 
