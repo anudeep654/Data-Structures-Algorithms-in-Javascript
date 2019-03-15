@@ -7,10 +7,12 @@
 
 ##### Frequency Pattern
 
+Question: Given two arrays check whether the second array is the square of first array.Order has no priority
 
-//instead of nested loops using 2 for loops and making it to O(n^2),we are using frequency pattern.
+instead of nested loops using 2 for loops and making it to O(n^2),we are gonna use frequency pattern.
 
-//Same function done in native way with O(n^2)
+Same function done in native way with O(n^2)
+
 ```javascript
 function same(arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -27,9 +29,10 @@ function same(arr1, arr2) {
 }
 
 same([1, 4, 3], [1, 16, 9]);
- ```
- 
+```
+
 //Same function done in frequency pattern
+
 ```javascript
 function same(arr1, arr2) {
   //[1,2,3,2] [1,4,9,4]
@@ -60,7 +63,9 @@ function same(arr1, arr2) {
 
 same([1, 2, 3, 2], [1, 4, 9, 4]);
 ```
+
 //Anagram using frequency pattern
+
 ```javascript
 function validAnagram(str1, str2) {
   // validAnagram("andy","ydna")
@@ -93,7 +98,9 @@ function validAnagram(str1, str2) {
 
 validAnagram("eeudanp", "anudeep");
 ```
+
 //Another example of anagram
+
 ```javascript
 function anagram(str1, str2) {
   if (str1.length !== str2.length) {
@@ -115,6 +122,4 @@ function anagram(str1, str2) {
 }
 
 anagram("Anudeep", "peedunA");
-
 ```
-
