@@ -47,6 +47,6 @@ while(condition){
 
 }
 
-//it works by doing do loop at once before the while loop is executed.Do will work even the while loop condition is failed.
+//it works by doing the do loop at once before the while loop is executed.Do will work even the while loop condition is failed.
 
 ```
