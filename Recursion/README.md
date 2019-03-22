@@ -42,3 +42,27 @@ function collectOddValues(num) {
 
 collectOddValues([0, 1, 3, 4, 5]);
 ```
+
+For arrays use methods like slice,spread operator,concat to make coppies of arrays so you donot mutate them.
+
+Remember that strings are immutable so we need to use methods like slice,substr(takes 2 params,that slice with start and end),substring(takes 2 params that slice with start and end-1) ;
+
+to mmake copies of an object use object.assign or the spread operator
+
+Object.assign(target,source) //it will overide the same object keys in target and also the value that returns from object.assign will get new values.
+
+```javascript
+function countOddValues(arr) {
+  let newarr = [];
+
+  if (arr.length === 0) return newarr;
+  if (arr[0] % 2 !== 0) {
+    newarr.push(arr[0]);
+  }
+
+  newarr = newarr.concat(countOddValues(arr.slice(1)));
+  return newarr;
+}
+
+countOddValues([1, 2, 3, 4, 5, 6, 7]);
+```
