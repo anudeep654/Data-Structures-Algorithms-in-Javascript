@@ -76,3 +76,5 @@ arr.slice(start,end) -> start will happen from index 0 to the end ,if you are no
 arr.substr(start,end) -> starts from 0 -> it will not give the end value.
 
 arr.substr(start,end) ->will give the end value.
+
+String(val) ->converts any value to key from integer,boolean etc;
