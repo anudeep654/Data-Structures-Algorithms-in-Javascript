@@ -1,4 +1,4 @@
-# Linear Search
+## Linear Search
 
 The shortest case is O(1) <br/>
 Worst Case is O(n)<br/>
@@ -25,4 +25,36 @@ function linearSearch(arr, num) {
 }
 
 linearSearch([10, 15, -1, -2, -9, 20, 25, 30], -9);
+```
+
+# Binary search only works with sorted algorithms
+
+###### PseudoCode
+
+the function accepts sorted array and a value <br/>
+create a left pointer and right pointer <br/>
+create a middle element <br/>
+if value is less than middle element,bring right pointer to middle <br/>
+vice versa <br/>
+if nothing return -1 <br/>
+
+```javascript
+function binarySearch(arr, num) {
+  let start = 0;
+  let end = arr.length - 1;
+  while (start <= end) {
+    let middle = Math.floor((start + end) / 2);
+    let currentElement = arr[middle];
+    if (num < currentElement) {
+      end = middle - 1;
+    } else if (num > currentElement) {
+      start = middle + 1;
+    } else {
+      return middle;
+    }
+  }
+  return -1;
+}
+
+binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 34, 56, 78, 90], 78);
 ```
