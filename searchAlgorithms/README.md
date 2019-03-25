@@ -1,4 +1,4 @@
-=>Linear Search
+# Linear Search
 
 The shortest case is O(1) <br/>
 Worst Case is O(n)<br/>
