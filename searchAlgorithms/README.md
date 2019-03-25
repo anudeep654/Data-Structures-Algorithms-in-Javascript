@@ -29,6 +29,9 @@ linearSearch([10, 15, -1, -2, -9, 20, 25, 30], -9);
 
 # Binary search only works with sorted algorithms
 
+Best Case : O(1)<br/>
+Worst Case: O(log n) it will take 5 steps to search 32 elements which is indirectly log 32 = 5 ;<br/>
+
 ###### PseudoCode
 
 the function accepts sorted array and a value <br/>
