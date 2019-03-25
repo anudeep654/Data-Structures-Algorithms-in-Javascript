@@ -66,3 +66,13 @@ function countOddValues(arr) {
 
 countOddValues([1, 2, 3, 4, 5, 6, 7]);
 ```
+
+Array.isArray =>To check whether the variable is aarray or not
+
+variable instanceof Array -> to check whether the variable is array or not.
+
+arr.slice(start,end) -> start will happen from index 0 to the end ,if you are not mentioning end then it will give the full set.z
+
+arr.substr(start,end) -> starts from 0 -> it will not give the end value.
+
+arr.substr(start,end) ->will give the end value.

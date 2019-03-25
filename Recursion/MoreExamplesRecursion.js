@@ -112,3 +112,109 @@ function palindrome(str) {
 }
 
 palindrome("anudeep");
+
+//write a function that accepts set of array values and kindly make each item first letter in capital as output.
+function capitalizeFirst(arr) {
+  let newArr = [];
+
+  if (arr.length === 0) return newArr;
+
+  newArr.push(
+    arr[0]
+      .charAt(0)
+      .toUpperCase()
+      .concat(arr[0].slice(1))
+  );
+
+  newArr = newArr.concat(capitalizeFirst(arr.slice(1)));
+
+  return newArr;
+}
+
+//capitalizeFirst(['car','taco','banana']); // ['Car','Taco','Banana']
+
+function capitalizefirst(array) {
+  if (array.length === 1) {
+    return [array[0][0].toUpperCase() + array[0].substr(1)];
+  }
+  const res = capitalizefirst(array.slice(0, -1));
+  const string =
+    array.slice(array.length - 1)[0][0].toUpperCase() +
+    array.slice(array.length - 1)[0].substr(1);
+  res.push(string);
+  return res;
+}
+capitalizefirst(["car", "taco", "banana"]);
+
+function flatten(arr) {
+  let newarr = [];
+
+  if (arr.length === 0) return null;
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      newarr = newarr.concat(flatten(arr[i]));
+    } else {
+      newarr.push(arr[i]);
+    }
+  }
+
+  return newarr;
+}
+
+flatten([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]]);
+
+//write a function where it accepts objects and it should return the sum of the values which are even.
+
+function nestedEvenSum(obj, sum = 0) {
+  // add whatever parameters you deem necessary - good luck!
+
+  for (let key in obj) {
+    if (typeof obj[key] === "object") {
+      sum += nestedEvenSum(obj[key]);
+    } else {
+      if (typeof obj[key] === "number" && obj[key] % 2 === 0) {
+        sum += obj[key];
+      }
+    }
+  }
+
+  return sum;
+}
+nestedEvenSum(obj2); // 10
+nestedEvenSum(obj1); // 6
+
+var obj1 = {
+  outer: 2,
+  obj: {
+    inner: 2,
+    otherObj: {
+      superInner: 2,
+      notANumber: true,
+      alsoNotANumber: "yup"
+    }
+  }
+};
+
+var obj2 = {
+  a: 2,
+  b: { b: 2, bb: { b: 3, bb: { b: 2 } } },
+  c: { c: { c: 2 }, cc: "ball", ccc: 5 },
+  d: 1,
+  e: { e: { e: 2 }, ee: "car" }
+};
+
+//write a function that accepts array of small alphabets and try to return the capitalized words.
+
+function capitalizedWords(arr) {
+  let newArr = [];
+
+  if (arr.length === 1) return arr[0].toUpperCase();
+
+  newArr.push(arr[0].toUpperCase());
+
+  newArr = newArr.concat(capitalizedWords(arr.slice(1)));
+
+  return newArr;
+}
+
+capitalizedWords(["i", "am", "learning", "recursion"]);

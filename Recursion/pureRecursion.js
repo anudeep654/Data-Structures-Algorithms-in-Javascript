@@ -11,3 +11,17 @@ function countOddValues(arr) {
 }
 
 countOddValues([1, 2, 3, 4, 5, 6, 7]);
+
+function someRecursive(arr, callback) {
+  if (arr.length === 0) return false;
+
+  if (callback(arr[0])) return true;
+
+  return someRecursive(arr.slice(1), callback);
+}
+
+function isOdd(val) {
+  return val % 2 !== 0;
+}
+
+someRecursive([2, 2, 4, 9], isOdd);
