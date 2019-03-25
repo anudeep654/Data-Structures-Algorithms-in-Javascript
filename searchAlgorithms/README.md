@@ -1,11 +1,8 @@
-Search Algorithms
-Array Methods:=>
-
-indexOf
-includes
-find
-findIndex
 =>Linear Search
+
+The shortest case is O(1) <br/>
+Worst Case is O(n)<br/>
+The average is O(n)<br/>
 
 ```javascript
 //pseudocode
