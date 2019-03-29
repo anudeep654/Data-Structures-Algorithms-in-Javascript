@@ -31,3 +31,27 @@ function stringSearch(longString, shortString) {
 }
 
 stringSearch("anudeepanu anu is a anu boyanu", "anu");
+
+function stringSearch(long, short) {
+  let count = 0;
+  for (let i = 0; i < long.length; i++) {
+    for (let j = 0; j < short.length; j++) {
+      if (long[i + j] !== short[j]) break;
+      if (short.length - 1 === j) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+stringSearch("lolo lolos", "lo");
+
+//Kmp search is really nice.
+
+//first take the substring and do some math work
+
+//i j
+//abcdghabcgad
+//[0 0 1 0 0 0 2]
+//when checking in main string always check one by one

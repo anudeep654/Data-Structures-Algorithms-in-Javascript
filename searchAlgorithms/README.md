@@ -1,3 +1,7 @@
+SEARCH ALGORITHMS
+
+=>KMP Search(Knutch-Morris-Pratt) =>https://www.youtube.com/watch?v=GTJr8OvyEVQ
+
 ## Linear Search
 
 The shortest case is O(1) <br/>
