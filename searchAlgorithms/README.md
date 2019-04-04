@@ -1,6 +1,6 @@
 SEARCH ALGORITHMS
 
-=>KMP Search(Knutch-Morris-Pratt) =>https://www.youtube.com/watch?v=GTJr8OvyEVQ
+=>KMP SubString Search(Knutch-Morris-Pratt) =>https://www.youtube.com/watch?v=GTJr8OvyEVQ
 
 ## Linear Search
 
