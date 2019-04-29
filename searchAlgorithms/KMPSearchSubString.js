@@ -1,6 +1,6 @@
 function KMPSearchSubString(str, pattern) {
   //a function that gives the substring table values in an array
-
+  //Knutch morris pratt algorithm
   var prefixes = longestPrefix(pattern);
   let j = 0,
     i = 0;
