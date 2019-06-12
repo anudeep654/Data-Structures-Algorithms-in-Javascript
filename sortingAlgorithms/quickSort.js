@@ -5,7 +5,7 @@
 
 //when the middle element is pivoted it needs the left of its array to get sorted and also its right array.
 //finally return the sorted array.
-//
+////BigO -> nlog(n) =>worst case: O(n^2);
 function pivot(arr, start = 0, end = arr.length + 1) {
   var pivotIndex = start;
 

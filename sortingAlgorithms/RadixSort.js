@@ -8,6 +8,7 @@
 //helper methods like if i pass a number and bucket index it needs to give thelast digit value.(k)
 //second helper to find the largest number
 //third helper to find the largest number size
+//Time COmplexity O(nk) => where nis no of digits and k is size of digits => so its O(nk).
 
 function getLastDigit(val, index) {
   return Math.floor((Math.abs(val) / Math.pow(10, index)) % 10);
